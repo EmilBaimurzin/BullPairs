@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/text_box02">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/BasicText"
+                android:textSize="22sp"
+                android:text="result"
+                android:textAllCaps="true"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:id="@+id/score"
+                tools:text="2000"
+                style="@style/BasicText"
+                android:textSize="22sp"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:background="@drawable/score"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/BasicText"
+                android:textSize="22sp"
+                android:text="record"
+                android:textAllCaps="true"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:id="@+id/best_score"
+                tools:text="2000"
+                style="@style/BasicText"
+                android:textSize="22sp"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:background="@drawable/score"/>
+
+        </LinearLayout>
+
+        <com.bull.game.core.library.CustomImageButton
+            android:id="@+id/restart"
+            android:layout_marginVertical="30dp"
+            android:src="@drawable/restart"
+            android:layout_width="55dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</FrameLayout>
